@@ -1,309 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jebin Kim</title>
-  <meta name="description" content="Personal academic homepage of Jebin Kim, M.S. candidate in Cybersecurity at Korea University." />
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    // Preserve the browser's normal scroll restoration on refresh.
-    // If an old #section URL remains from a previous version, remove it early
-    // so the browser restores the last scroll position instead of jumping to the anchor.
-    (function () {
-      if ('scrollRestoration' in history) {
-        history.scrollRestoration = 'auto';
-      }
-      if (window.location.hash) {
-        history.replaceState(null, document.title, window.location.pathname + window.location.search);
-      }
-    })();
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jebin Kim</title>
+    <meta name="description" content="Personal academic homepage of Jebin Kim, M.S. candidate in Cybersecurity at Korea University." />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        // Preserve the browser's normal scroll restoration on refresh.
+        // If an old #section URL remains from a previous version, remove it early
+        // so the browser restores the last scroll position instead of jumping to the anchor.
+        (function() {
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'auto';
+            }
+            if (window.location.hash) {
+                history.replaceState(null, document.title, window.location.pathname + window.location.search);
+            }
+        })();
+    </script>
 </head>
+
 <body>
-  <!-- HOMEPAGE_VERSION: ABOUT_LEFT_IMAGE_RIGHT_TEXT_V5 -->
-  <!-- News section updated: latest-first, 5 items, generated 2026-06-02 -->
-  <div id="page-wrapper">
-<!--    <header id="header">-->
-<!--      <div class="logo-container">-->
-<!--        <div class="logo-box">-->
-<!--          <h1><a href="#about">Jebin Kim</a></h1>-->
-<!--          <p>Cryptography · Post-Quantum Cryptanalysis · AI-Assisted Cryptanalysis</p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </header>-->
+    <!-- HOMEPAGE_VERSION: ABOUT_LEFT_IMAGE_RIGHT_TEXT_V5 -->
+    <!-- News section updated: latest-first, 5 items, generated 2026-06-02 -->
+    <div id="page-wrapper">
+        <!--    <header id="header">-->
+        <!--      <div class="logo-container">-->
+        <!--        <div class="logo-box">-->
+        <!--          <h1><a href="#about">Jebin Kim</a></h1>-->
+        <!--          <p>Cryptography · Post-Quantum Cryptanalysis · AI-Assisted Cryptanalysis</p>-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </header>-->
 
-    <nav id="nav" aria-label="Main navigation">
-      <ul>
-        <li class="current"><a href="#about">About Me</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="CV/CV20260602.pdf">CV</a></li>
-      </ul>
-    </nav>
+        <nav id="nav" aria-label="Main navigation">
+            <ul>
+                <li class="current"><a href="#about">About Me</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="CV/CV20260602.pdf">CV</a></li>
+            </ul>
+        </nav>
 
-    <main id="main">
-      <div class="container">
+        <main id="main">
+            <div class="container">
 
-<!-- ABOUT -->
-<section id="about" class="box page-content about-split">
-  <h2 class="major"><span>About Me</span></h2>
+                <!-- ABOUT -->
+                <section id="about" class="box page-content about-split">
+                    <h2 class="major"><span>About Me</span></h2>
 
-  <div class="about-layout">
-    <div class="about-photo">
-      <img src="images/Jebinkim.jpg" alt="Profile photo of Jebin Kim" />
+                    <div class="about-layout">
+                        <div class="about-photo">
+                            <img src="images/Jebinkim.jpg" alt="Profile photo of Jebin Kim" />
+                        </div>
+
+                        <div class="about-text">
+                            <h1>Jebin Kim</h1>
+                            <p class="subtitle">M.S. Candidate in Cybersecurity, Korea University</p>
+
+                            <p>
+                                I am a master's student in Cybersecurity at Korea University. My research interests include
+                                cryptanalysis of lattice-based cryptography, AI-assisted cryptanalysis techniques, and post-quantum cryptography.
+                            </p>
+
+                            <p>
+                                I am broadly interested in the mathematical and computational foundations of modern cryptanalysis,
+                                including LWE-based cryptography, lattice reduction, hardness estimation, and learning-guided
+                                optimization for large-scale cryptanalytic problems such as GNFS polynomial selection.
+                            </p>
+
+                            <!--      <p class="affiliation">-->
+                            <!--        Graduate School of Information Security, Korea University-->
+                            <!--      </p>-->
+
+                            <p class="profile-links">
+                                <a href="CV/CV20260602.pdf">CV</a>
+                                <span>/</span>
+                                <a href="mailto:wpqls1025@korea.ac.kr">wpqls1025@korea.ac.kr</a>
+                                <span>/</span>
+                                <a href="#">Google Scholar</a>
+                                <span>/</span>
+                                <a href="https://www.linkedin.com/in/jebinkim">LinkedIn</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- NEWS -->
+                <section id="news" class="box page-content">
+                    <h2 class="major"><span>News</span></h2>
+                    <ul class="news-list">
+                        <li>
+                            <span class="news-date">Nov. 2025</span>
+                            <span class="news-text">
+                                Presented our paper on reinforcement learning for CADO-NFS polynomial selection at CISC-W 2025.
+                            </span>
+                        </li>
+                        <li>
+                            <span class="news-date">Jun. 2025</span>
+                            <span class="news-text">
+                                Presented our survey paper on cryptanalysis techniques for LWE-based cryptography at CISC-S 2025.
+                            </span>
+                        </li>
+                        <li>
+                            <span class="news-date">Mar. 2025</span>
+                            <span class="news-text">
+                                Started my M.S. program in Cybersecurity at Korea University.
+                            </span>
+                        </li>
+                        <li>
+                            <span class="news-date">Nov. 2024</span>
+                            <span class="news-text">
+                                Presented our work on performance analysis of Round 2 KpqC algorithms at CISC-W 2024.
+                            </span>
+                        </li>
+                        <li>
+                            <span class="news-date">2024</span>
+                            <span class="news-text">
+                                Received a special prize at the 2024 Cryptographic Analysis Contest organized by KIISC.
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- EDUCATION -->
+                <section id="education" class="box page-content education-compact">
+                    <h2 class="major"><span>Education</span></h2>
+
+                    <div class="edu-list">
+                        <article class="edu-item">
+                            <h3>Korea University</h3>
+                            <div class="edu-detail">
+                                <p>M.S. in Cybersecurity</p>
+                                <p>Mar. 2025 – Present</p>
+                                <p>Graduate School of Information Security</p>
+                            </div>
+                        </article>
+
+                        <article class="edu-item">
+                            <h3>University of Seoul</h3>
+                            <div class="edu-detail">
+                                <p>B.S. in Mathematics and B.E. in Artificial Intelligence <span class="degree-note">(Double Major)</span></p>
+                                <p>Mar. 2019 – Feb. 2025</p>
+                                <p>
+                                    Studied number theory, linear algebra, abstract algebra, discrete mathematics,
+                                    pattern recognition, deep learning, machine learning, and data mining.
+                                </p>
+                                <p>GPA/Percentage: 4.12 / 96.2</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!--        &lt;!&ndash; WORK EXPERIENCE &ndash;&gt;-->
+                <!--        <section id="work" class="box page-content">-->
+                <!--          <h2 class="major"><span>Work Experience</span></h2>-->
+                <!--          <div class="empty-space" aria-label="Empty work experience section"></div>-->
+                <!--        </section>-->
+
+                <!-- PUBLICATIONS -->
+                <section id="publications" class="box page-content">
+                    <h2 class="major"><span>Publications</span></h2>
+
+                    <h3 class="section-subtitle">Preprints</h3>
+                    <div class="publication-empty-box" aria-label="Empty publications section">
+                        준비중...
+                    </div>
+
+                    <h3 class="section-subtitle">International Publications</h3>
+                    <div class="publication-empty-box" aria-label="Empty publications section">
+                        준비중...
+                    </div>
+
+                    <h3 class="section-subtitle domestic-title">Domestic Publications (Korean)</h3>
+                    <ul class="domestic-publications">
+                        <li>
+                            J. Kim, I. Lee, C. Jeon, S. Kim, S. Hong, and S. Lee,
+                            “Reinforcement Learning for Parameter Optimization in CADO-NFS Polynomial Selection,”
+                            in <em>Proc. of the KIISC Winter Conference (CISC-W)</em>, Nov. 2025.
+                        </li>
+                        <li>
+                            J. Kim, T. Kang, C. Jeon, S. Kim, and S. Hong,
+                            “A Survey on Cryptanalysis Techniques for LWE-based Cryptography,”
+                            in <em>Proc. of the KIISC Summer Conference (CISC-S)</em>, Jun. 2025.
+                        </li>
+                        <li>
+                            J. Kim, J. Jang, M. Lee, S. Kim, J. Sung, and S. Hong,
+                            “Performance Analysis of Round 2 KpqC Algorithms Considering Transmission Cost in Communication Environments,”
+                            in <em>Proc. of the KIISC Winter Conference (CISC-W)</em>, Nov. 2024.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- AWARDS & HONORS -->
+                <section id="awards" class="box page-content">
+                    <h2 class="major"><span>Awards &amp; Honors</span></h2>
+                    <ul class="cv-list compact">
+                        <li>
+                            <h3>The Special Prize, 2024 Cryptographic Analysis Contest</h3>
+                            <p class="institution">KIISC, Republic of Korea</p>
+                        </li>
+                        <li>
+                            <h3>Selection of Outstanding Capstone Design Projects (Finderz)</h3>
+                            <p class="institution">University of Seoul, Republic of Korea</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- TEACHING EXPERIENCE -->
+                <section id="teaching" class="box page-content">
+                    <h2 class="major"><span>Teaching Experience</span></h2>
+                    <ul class="cv-list">
+                        <li>
+                            <div class="item-head">
+                                <h3>Teaching Assistant</h3>
+                                <span>Mar. 2023 - Feb. 2025</span>
+                            </div>
+                            <p class="institution">University of Seoul, Seoul, Republic of Korea</p>
+                            <ul class="sub-list">
+                                <li>Teaching Assistant of Linear Algebra 2, Sep. 2024 - Feb. 2025.</li>
+                                <li>Teaching Assistant of Cryptographic Mathematics 2, Sep. 2024 - Feb. 2025.</li>
+                                <li>Teaching Assistant of Cryptographic Mathematics 1, Mar. 2024 - Aug. 2024.</li>
+                                <li>Teaching Assistant of Analysis 2, Sep. 2023 - Feb. 2024.</li>
+                                <li>Teaching Assistant of Calculus 1, Mar. 2023 - Aug. 2023.</li>
+                                <li>Teaching Assistant of Linear Algebra 1, Mar. 2023 - Aug. 2023.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <!--        &lt;!&ndash; PROFESSIONAL ACTIVITIES &ndash;&gt;-->
+                <!--        <section id="professional-activities" class="box page-content">-->
+                <!--          <h2 class="major"><span>Professional Activities</span></h2>-->
+                <!--          <div class="empty-space" aria-label="Empty professional activities section"></div>-->
+                <!--        </section>-->
+
+                <!-- OTHER EXPERIENCE -->
+                <section id="other-experience" class="box page-content">
+                    <h2 class="major"><span>Other Experience</span></h2>
+                    <ul class="cv-list compact">
+                        <li>
+                            <h3>2024 Advanced Cryptographic Module Professional Training Program Completion</h3>
+                            <p class="institution">KISA, Republic of Korea</p>
+                        </li>
+                        <li>
+                            <h3>2023 Cybersecurity Academy Program for Undergraduate and Graduate Students</h3>
+                            <p class="institution">NIS, NSR, ICLS, Republic of Korea</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!--        &lt;!&ndash; INVITED TALKS &ndash;&gt;-->
+                <!--        <section id="invited-talks" class="box page-content">-->
+                <!--          <h2 class="major"><span>Invited Talks</span></h2>-->
+                <!--          <div class="empty-space" aria-label="Empty invited talks section"></div>-->
+                <!--        </section>-->
+
+                <p class="last-update">Last Update: June 2026</p>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="container footer-content">
+                <p>© 2026 Jebin Kim</p>
+                <p>Design inspired by academic personal homepages and HTML5 UP TXT-style layout.</p>
+            </div>
+        </footer>
     </div>
 
-    <div class="about-text">
-      <h1>Jebin Kim</h1>
-      <p class="subtitle">M.S. Candidate in Cybersecurity, Korea University</p>
+    <script>
+        // In-page navigation without leaving #section in the URL.
+        // Refresh keeps the browser's previous scroll position.
+        (function() {
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'auto';
+            }
 
-      <p>
-        I am a master's student in Cybersecurity at Korea University. My research interests include
-        cryptanalysis of lattice-based cryptography, AI-assisted cryptanalysis techniques, and         post-quantum cryptography.
-      </p>
+            function removeHash() {
+                if (window.location.hash) {
+                    history.replaceState(null, document.title, window.location.pathname + window.location.search);
+                }
+            }
 
-      <p>
-        I am broadly interested in the mathematical and computational foundations of modern cryptanalysis,
-        including LWE-based cryptography, lattice reduction, hardness estimation, and learning-guided
-        optimization for large-scale cryptanalytic problems such as GNFS polynomial selection.
-      </p>
+            document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    var targetId = link.getAttribute('href');
+                    if (!targetId || targetId === '#') return;
 
-<!--      <p class="affiliation">-->
-<!--        Graduate School of Information Security, Korea University-->
-<!--      </p>-->
+                    var target = document.querySelector(targetId);
+                    if (!target) return;
 
-      <p class="profile-links">
-        <a href="CV/CV20260602.pdf">CV</a>
-        <span>/</span>
-        <a href="mailto:wpqls1025@korea.ac.kr">wpqls1025@korea.ac.kr</a>
-        <span>/</span>
-        <a href="#">Google Scholar</a>
-        <span>/</span>
-        <a href="https://www.linkedin.com/in/jebinkim">LinkedIn</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-
-        <!-- NEWS -->
-        <section id="news" class="box page-content">
-          <h2 class="major"><span>News</span></h2>
-          <ul class="news-list">
-            <li>
-              <span class="news-date">Nov. 2025</span>
-              <span class="news-text">
-                Presented our paper on reinforcement learning for CADO-NFS polynomial selection at CISC-W 2025.
-              </span>
-            </li>
-            <li>
-              <span class="news-date">Jun. 2025</span>
-              <span class="news-text">
-                Presented our survey paper on cryptanalysis techniques for LWE-based cryptography at CISC-S 2025.
-              </span>
-            </li>
-            <li>
-              <span class="news-date">Mar. 2025</span>
-              <span class="news-text">
-                Started my M.S. program in Cybersecurity at Korea University.
-              </span>
-            </li>
-            <li>
-              <span class="news-date">Nov. 2024</span>
-              <span class="news-text">
-                Presented our work on performance analysis of Round 2 KpqC algorithms at CISC-W 2024.
-              </span>
-            </li>
-            <li>
-              <span class="news-date">2024</span>
-              <span class="news-text">
-                Received a special prize at the 2024 Cryptographic Analysis Contest organized by KIISC.
-              </span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- EDUCATION -->
-        <section id="education" class="box page-content">
-          <h2 class="major"><span>Education</span></h2>
-          <ul class="cv-list">
-            <li>
-              <div class="item-head">
-                <h3>M.S. Candidate in Cybersecurity</h3>
-                <span>Mar. 2025 - Present</span>
-              </div>
-              <p class="institution">Korea University, Seoul, Republic of Korea</p>
-            </li>
-
-            <li>
-              <div class="item-head">
-                <h3>B.S. in Mathematics</h3>
-                <span>Mar. 2019 - Feb. 2025</span>
-              </div>
-              <p class="institution">University of Seoul, Seoul, Republic of Korea</p>
-              <p>Studied number theory, linear algebra, abstract algebra, and discrete mathematics.</p>
-              <p class="muted">GPA/Percentage: 4.12 / 96.2</p>
-            </li>
-
-            <li>
-              <div class="item-head">
-                <h3>B.E. in Artificial Intelligence</h3>
-                <span>Mar. 2019 - Feb. 2025</span>
-              </div>
-              <p class="institution">University of Seoul, Seoul, Republic of Korea</p>
-              <p>Studied pattern recognition, deep learning, machine learning, and data mining.</p>
-              <p class="muted">GPA/Percentage: 4.12 / 96.2</p>
-            </li>
-          </ul>
-        </section>
-
-<!--        &lt;!&ndash; WORK EXPERIENCE &ndash;&gt;-->
-<!--        <section id="work" class="box page-content">-->
-<!--          <h2 class="major"><span>Work Experience</span></h2>-->
-<!--          <div class="empty-space" aria-label="Empty work experience section"></div>-->
-<!--        </section>-->
-
-        <!-- PUBLICATIONS -->
-        <section id="publications" class="box page-content">
-          <h2 class="major"><span>Publications</span></h2>
-
-          <h3 class="section-subtitle">Preprints</h3>
-          <div class="publication-empty-box" aria-label="Empty publications section">
-            준비중...
-          </div>
-
-          <h3 class="section-subtitle">International Publications</h3>
-          <div class="publication-empty-box" aria-label="Empty publications section">
-            준비중...
-          </div>
-
-          <h3 class="section-subtitle domestic-title">Domestic Publications (Korean)</h3>
-          <ul class="domestic-publications">
-            <li>
-              J. Kim, I. Lee, C. Jeon, S. Kim, S. Hong, and S. Lee,
-              “Reinforcement Learning for Parameter Optimization in CADO-NFS Polynomial Selection,”
-              in <em>Proc. of the KIISC Winter Conference (CISC-W)</em>, Nov. 2025.
-            </li>
-            <li>
-              J. Kim, T. Kang, C. Jeon, S. Kim, and S. Hong,
-              “A Survey on Cryptanalysis Techniques for LWE-based Cryptography,”
-              in <em>Proc. of the KIISC Summer Conference (CISC-S)</em>, Jun. 2025.
-            </li>
-            <li>
-              J. Kim, J. Jang, M. Lee, S. Kim, J. Sung, and S. Hong,
-              “Performance Analysis of Round 2 KpqC Algorithms Considering Transmission Cost in Communication Environments,”
-              in <em>Proc. of the KIISC Winter Conference (CISC-W)</em>, Nov. 2024.
-            </li>
-          </ul>
-        </section>
-
-        <!-- AWARDS & HONORS -->
-        <section id="awards" class="box page-content">
-          <h2 class="major"><span>Awards &amp; Honors</span></h2>
-          <ul class="cv-list compact">
-            <li>
-              <h3>The Special Prize, 2024 Cryptographic Analysis Contest</h3>
-              <p class="institution">KIISC, Republic of Korea</p>
-            </li>
-            <li>
-              <h3>Selection of Outstanding Capstone Design Projects (Finderz)</h3>
-              <p class="institution">University of Seoul, Republic of Korea</p>
-            </li>
-          </ul>
-        </section>
-
-        <!-- TEACHING EXPERIENCE -->
-        <section id="teaching" class="box page-content">
-          <h2 class="major"><span>Teaching Experience</span></h2>
-          <ul class="cv-list">
-            <li>
-              <div class="item-head">
-                <h3>Teaching Assistant</h3>
-                <span>Mar. 2023 - Feb. 2025</span>
-              </div>
-              <p class="institution">University of Seoul, Seoul, Republic of Korea</p>
-              <ul class="sub-list">
-                <li>Teaching Assistant of Linear Algebra 2, Sep. 2024 - Feb. 2025.</li>
-                <li>Teaching Assistant of Cryptographic Mathematics 2, Sep. 2024 - Feb. 2025.</li>
-                <li>Teaching Assistant of Cryptographic Mathematics 1, Mar. 2024 - Aug. 2024.</li>
-                <li>Teaching Assistant of Analysis 2, Sep. 2023 - Feb. 2024.</li>
-                <li>Teaching Assistant of Calculus 1, Mar. 2023 - Aug. 2023.</li>
-                <li>Teaching Assistant of Linear Algebra 1, Mar. 2023 - Aug. 2023.</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-<!--        &lt;!&ndash; PROFESSIONAL ACTIVITIES &ndash;&gt;-->
-<!--        <section id="professional-activities" class="box page-content">-->
-<!--          <h2 class="major"><span>Professional Activities</span></h2>-->
-<!--          <div class="empty-space" aria-label="Empty professional activities section"></div>-->
-<!--        </section>-->
-
-        <!-- OTHER EXPERIENCE -->
-        <section id="other-experience" class="box page-content">
-          <h2 class="major"><span>Other Experience</span></h2>
-          <ul class="cv-list compact">
-            <li>
-              <h3>2024 Advanced Cryptographic Module Professional Training Program Completion</h3>
-              <p class="institution">KISA, Republic of Korea</p>
-            </li>
-            <li>
-              <h3>2023 Cybersecurity Academy Program for Undergraduate and Graduate Students</h3>
-              <p class="institution">NIS, NSR, ICLS, Republic of Korea</p>
-            </li>
-          </ul>
-        </section>
-
-<!--        &lt;!&ndash; INVITED TALKS &ndash;&gt;-->
-<!--        <section id="invited-talks" class="box page-content">-->
-<!--          <h2 class="major"><span>Invited Talks</span></h2>-->
-<!--          <div class="empty-space" aria-label="Empty invited talks section"></div>-->
-<!--        </section>-->
-
-        <p class="last-update">Last Update: June 2026</p>
-      </div>
-    </main>
-
-    <footer id="footer">
-      <div class="container footer-content">
-        <p>© 2026 Jebin Kim</p>
-        <p>Design inspired by academic personal homepages and HTML5 UP TXT-style layout.</p>
-      </div>
-    </footer>
-  </div>
-
-  <script>
-    // In-page navigation without leaving #section in the URL.
-    // Refresh keeps the browser's previous scroll position.
-    (function () {
-      if ('scrollRestoration' in history) {
-        history.scrollRestoration = 'auto';
-      }
-
-      function removeHash() {
-        if (window.location.hash) {
-          history.replaceState(null, document.title, window.location.pathname + window.location.search);
-        }
-      }
-
-      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-        link.addEventListener('click', function (event) {
-          var targetId = link.getAttribute('href');
-          if (!targetId || targetId === '#') return;
-
-          var target = document.querySelector(targetId);
-          if (!target) return;
-
-          event.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          removeHash();
-        });
-      });
-    })();
-  </script>
+                    event.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    removeHash();
+                });
+            });
+        })();
+    </script>
 </body>
+
 </html>
