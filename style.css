@@ -710,3 +710,67 @@ section#about.banner {
   }
 }
 
+/* =========================================================
+   EDUCATION_COMPACT_OVERRIDE
+   Based on current style.css structure:
+   - The Education section currently uses .timeline / .timeline-item.
+   - This override makes Education compact and indents details.
+   - Place at the END of style.css so it overrides earlier rules.
+   ========================================================= */
+
+#education .timeline {
+  display: block;
+}
+
+#education .timeline-item {
+  border-top: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 0 1.05rem;
+}
+
+#education .timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+#education .timeline-item h3 {
+  margin: 0 0 0.15rem;
+  color: #1f252b;
+  font-size: 1.08rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+
+#education .timeline-item p {
+  margin: 0.04rem 0;
+  padding-left: 1.15rem;
+  color: #252b31;
+  font-size: 0.98rem;
+  line-height: 1.28;
+}
+
+#education .timeline-item .muted {
+  color: #555;
+  font-weight: 500;
+}
+
+/* If you use a note such as "(Double Major)" in the degree line. */
+#education .degree-note {
+  color: #666;
+  font-size: 0.95em;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  #education .timeline-item {
+    margin-bottom: 0.95rem;
+  }
+
+  #education .timeline-item p {
+    padding-left: 0.85rem;
+    line-height: 1.34;
+  }
+}
