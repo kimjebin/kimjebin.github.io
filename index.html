@@ -1,256 +1,309 @@
-<!DOCTYPE HTML>
-<!--
-	TXT by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>No Sidebar - TXT by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jebin Kim</title>
+  <meta name="description" content="Personal academic homepage of Jebin Kim, M.S. candidate in Cybersecurity at Korea University." />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Preserve the browser's normal scroll restoration on refresh.
+    // If an old #section URL remains from a previous version, remove it early
+    // so the browser restores the last scroll position instead of jumping to the anchor.
+    (function () {
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'auto';
+      }
+      if (window.location.hash) {
+        history.replaceState(null, document.title, window.location.pathname + window.location.search);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- HOMEPAGE_VERSION: ABOUT_LEFT_IMAGE_RIGHT_TEXT_V5 -->
+  <!-- News section updated: latest-first, 5 items, generated 2026-06-02 -->
+  <div id="page-wrapper">
+<!--    <header id="header">-->
+<!--      <div class="logo-container">-->
+<!--        <div class="logo-box">-->
+<!--          <h1><a href="#about">Jebin Kim</a></h1>-->
+<!--          <p>Cryptography · Post-Quantum Cryptanalysis · AI-Assisted Cryptanalysis</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </header>-->
 
-			<!-- Header -->
-				<header id="header">
-					<div class="logo container">
-						<div>
-							<h1>Jebin Kim</a></h1>
-							<p>A responsive site template by HTML5 UP</p>
-						</div>
-					</div>
-				</header>
+    <nav id="nav" aria-label="Main navigation">
+      <ul>
+        <li class="current"><a href="#about">About Me</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="assets/cv.pdf">CV</a></li>
+      </ul>
+    </nav>
 
-			<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li>
-							<a href="#">Dropdown</a>
-							<ul>
-								<li><a href="#">Lorem ipsum dolor</a></li>
-								<li><a href="#">Magna phasellus</a></li>
-								<li>
-									<a href="#">Phasellus consequat</a>
-									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Phasellus consequat</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Veroeros feugiat</a></li>
-							</ul>
-						</li>
-						<li><a href="left-sidebar.html">Left Sidebar</a></li>
-						<li><a href="right-sidebar.html">Right Sidebar</a></li>
-						<li class="current"><a href="no-sidebar.html">No Sidebar</a></li>
-					</ul>
-				</nav>
+    <main id="main">
+      <div class="container">
 
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="content">
+<!-- ABOUT -->
+<section id="about" class="box page-content about-split">
+  <h2 class="major"><span>About Me</span></h2>
 
-									<!-- Content -->
+  <div class="about-layout">
+    <div class="about-photo">
+      <img src="images/Jebinkim.jpg" alt="Profile photo of Jebin Kim" />
+    </div>
 
-										<article class="box page-content">
+    <div class="about-text">
+      <h1>Jebin Kim</h1>
+      <p class="subtitle">M.S. Candidate in Cybersecurity, Korea University</p>
 
-											<header>
-												<h2>No Sidebar</h2>
-												<p>Semper amet scelerisque metus faucibus morbi congue mattis</p>
-												<ul class="meta">
-													<li class="icon fa-clock">5 days ago</li>
-													<li class="icon fa-comments"><a href="#">1,024</a></li>
-												</ul>
-											</header>
+      <p>
+        I am a master's student in Cybersecurity at Korea University. My research interests include
+        cryptanalysis of lattice-based cryptography, AI-assisted cryptanalysis techniques, and         post-quantum cryptography.
+      </p>
 
-											<section>
-												<span class="image featured"><img src="images/pic05.jpg" alt="" /></span>
-												<p>
-													Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-													Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-													Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-													consequat etiam lorem ipsum dolor sit amet nullam.
-												</p>
-											</section>
+      <p>
+        I am broadly interested in the mathematical and computational foundations of modern cryptanalysis,
+        including LWE-based cryptography, lattice reduction, hardness estimation, and learning-guided
+        optimization for large-scale cryptanalytic problems such as GNFS polynomial selection.
+      </p>
 
-											<section>
-												<h3>More intriguing information</h3>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-													justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-													ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-													vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-													Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-													rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien
-													vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-													Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-													rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-													Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-													Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.
-												</p>
-											</section>
+<!--      <p class="affiliation">-->
+<!--        Graduate School of Information Security, Korea University-->
+<!--      </p>-->
 
-											<section>
-												<h3>So in conclusion ...</h3>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-													justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-													ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-													vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-													Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-													rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-													Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-													Phasellus sed nisl vitae.
-												</p>
-												<p>
-													Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-													fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-													Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-												</p>
-											</section>
+      <p class="profile-links">
+        <a href="CV/CV20260602.pdf">CV</a>
+        <span>/</span>
+        <a href="mailto:wpqls1025@korea.ac.kr">wpqls1025@korea.ac.kr</a>
+        <span>/</span>
+        <a href="#">Google Scholar</a>
+        <span>/</span>
+        <a href="https://www.linkedin.com/in/jebinkim">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+</section>
 
-										</article>
 
-								</div>
-							</div>
-							<div class="col-12">
+        <!-- NEWS -->
+        <section id="news" class="box page-content">
+          <h2 class="major"><span>News</span></h2>
+          <ul class="news-list">
+            <li>
+              <span class="news-date">Nov. 2025</span>
+              <span class="news-text">
+                Presented our paper on reinforcement learning for CADO-NFS polynomial selection at CISC-W 2025.
+              </span>
+            </li>
+            <li>
+              <span class="news-date">Jun. 2025</span>
+              <span class="news-text">
+                Presented our survey paper on cryptanalysis techniques for LWE-based cryptography at CISC-S 2025.
+              </span>
+            </li>
+            <li>
+              <span class="news-date">Mar. 2025</span>
+              <span class="news-text">
+                Started my M.S. program in Cybersecurity at Korea University.
+              </span>
+            </li>
+            <li>
+              <span class="news-date">Nov. 2024</span>
+              <span class="news-text">
+                Presented our work on performance analysis of Round 2 KpqC algorithms at CISC-W 2024.
+              </span>
+            </li>
+            <li>
+              <span class="news-date">2024</span>
+              <span class="news-text">
+                Received a special prize at the 2024 Cryptographic Analysis Contest organized by KIISC.
+              </span>
+            </li>
+          </ul>
+        </section>
 
-								<!-- Features -->
-									<section class="box features">
-										<h2 class="major"><span>A Major Heading</span></h2>
-										<div>
-											<div class="row">
-												<div class="col-3 col-6-medium col-12-small">
+        <!-- EDUCATION -->
+        <section id="education" class="box page-content">
+          <h2 class="major"><span>Education</span></h2>
+          <ul class="cv-list">
+            <li>
+              <div class="item-head">
+                <h3>M.S. Candidate in Cybersecurity</h3>
+                <span>Mar. 2025 - Present</span>
+              </div>
+              <p class="institution">Korea University, Seoul, Republic of Korea</p>
+            </li>
 
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-															<h3><a href="#">A Subheading</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
+            <li>
+              <div class="item-head">
+                <h3>B.S. in Mathematics</h3>
+                <span>Mar. 2019 - Feb. 2025</span>
+              </div>
+              <p class="institution">University of Seoul, Seoul, Republic of Korea</p>
+              <p>Studied number theory, linear algebra, abstract algebra, and discrete mathematics.</p>
+              <p class="muted">GPA/Percentage: 4.12 / 96.2</p>
+            </li>
 
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
+            <li>
+              <div class="item-head">
+                <h3>B.E. in Artificial Intelligence</h3>
+                <span>Mar. 2019 - Feb. 2025</span>
+              </div>
+              <p class="institution">University of Seoul, Seoul, Republic of Korea</p>
+              <p>Studied pattern recognition, deep learning, machine learning, and data mining.</p>
+              <p class="muted">GPA/Percentage: 4.12 / 96.2</p>
+            </li>
+          </ul>
+        </section>
 
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-															<h3><a href="#">Another Subheading</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
+<!--        &lt;!&ndash; WORK EXPERIENCE &ndash;&gt;-->
+<!--        <section id="work" class="box page-content">-->
+<!--          <h2 class="major"><span>Work Experience</span></h2>-->
+<!--          <div class="empty-space" aria-label="Empty work experience section"></div>-->
+<!--        </section>-->
 
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
+        <!-- PUBLICATIONS -->
+        <section id="publications" class="box page-content">
+          <h2 class="major"><span>Publications</span></h2>
 
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-															<h3><a href="#">And Another</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
+          <h3 class="section-subtitle">Preprints</h3>
+          <div class="publication-empty-box" aria-label="Empty publications section">
+            준비중...
+          </div>
 
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
+          <h3 class="section-subtitle">International Publications</h3>
+          <div class="publication-empty-box" aria-label="Empty publications section">
+            준비중...
+          </div>
 
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-															<h3><a href="#">And One More</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
+          <h3 class="section-subtitle domestic-title">Domestic Publications (Korean)</h3>
+          <ul class="domestic-publications">
+            <li>
+              J. Kim, I. Lee, C. Jeon, S. Kim, S. Hong, and S. Lee,
+              “Reinforcement Learning for Parameter Optimization in CADO-NFS Polynomial Selection,”
+              in <em>Proc. of the KIISC Winter Conference (CISC-W)</em>, Nov. 2025.
+            </li>
+            <li>
+              J. Kim, T. Kang, C. Jeon, S. Kim, and S. Hong,
+              “A Survey on Cryptanalysis Techniques for LWE-based Cryptography,”
+              in <em>Proc. of the KIISC Summer Conference (CISC-S)</em>, Jun. 2025.
+            </li>
+            <li>
+              J. Kim, J. Jang, M. Lee, S. Kim, J. Sung, and S. Hong,
+              “Performance Analysis of Round 2 KpqC Algorithms Considering Transmission Cost in Communication Environments,”
+              in <em>Proc. of the KIISC Winter Conference (CISC-W)</em>, Nov. 2024.
+            </li>
+          </ul>
+        </section>
 
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><a href="#" class="button large">Do Something</a></li>
-														<li><a href="#" class="button alt large">Think About It</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</section>
+        <!-- AWARDS & HONORS -->
+        <section id="awards" class="box page-content">
+          <h2 class="major"><span>Awards &amp; Honors</span></h2>
+          <ul class="cv-list compact">
+            <li>
+              <h3>The Special Prize, 2024 Cryptographic Analysis Contest</h3>
+              <p class="institution">KIISC, Republic of Korea</p>
+            </li>
+            <li>
+              <h3>Selection of Outstanding Capstone Design Projects (Finderz)</h3>
+              <p class="institution">University of Seoul, Republic of Korea</p>
+            </li>
+          </ul>
+        </section>
 
-							</div>
-						</div>
-					</div>
-				</section>
+        <!-- TEACHING EXPERIENCE -->
+        <section id="teaching" class="box page-content">
+          <h2 class="major"><span>Teaching Experience</span></h2>
+          <ul class="cv-list">
+            <li>
+              <div class="item-head">
+                <h3>Teaching Assistant</h3>
+                <span>Mar. 2023 - Feb. 2025</span>
+              </div>
+              <p class="institution">University of Seoul, Seoul, Republic of Korea</p>
+              <ul class="sub-list">
+                <li>Teaching Assistant of Linear Algebra 2, Sep. 2024 - Feb. 2025.</li>
+                <li>Teaching Assistant of Cryptographic Mathematics 2, Sep. 2024 - Feb. 2025.</li>
+                <li>Teaching Assistant of Cryptographic Mathematics 1, Mar. 2024 - Aug. 2024.</li>
+                <li>Teaching Assistant of Analysis 2, Sep. 2023 - Feb. 2024.</li>
+                <li>Teaching Assistant of Calculus 1, Mar. 2023 - Aug. 2023.</li>
+                <li>Teaching Assistant of Linear Algebra 1, Mar. 2023 - Aug. 2023.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-12">
+<!--        &lt;!&ndash; PROFESSIONAL ACTIVITIES &ndash;&gt;-->
+<!--        <section id="professional-activities" class="box page-content">-->
+<!--          <h2 class="major"><span>Professional Activities</span></h2>-->
+<!--          <div class="empty-space" aria-label="Empty professional activities section"></div>-->
+<!--        </section>-->
 
-								<!-- About -->
-									<section>
-										<h2 class="major"><span>What's this about?</span></h2>
-										<p>
-											This is <strong>TXT</strong>, yet another free responsive site template designed by
-											<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>. It's released under the
-											<a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for
-											whatever you're working on (personal or commercial), just be sure to give us credit for the design.
-											That's basically it :)
-										</p>
-									</section>
+        <!-- OTHER EXPERIENCE -->
+        <section id="other-experience" class="box page-content">
+          <h2 class="major"><span>Other Experience</span></h2>
+          <ul class="cv-list compact">
+            <li>
+              <h3>2024 Advanced Cryptographic Module Professional Training Program Completion</h3>
+              <p class="institution">KISA, Republic of Korea</p>
+            </li>
+            <li>
+              <h3>2023 Cybersecurity Academy Program for Undergraduate and Graduate Students</h3>
+              <p class="institution">NIS, NSR, ICLS, Republic of Korea</p>
+            </li>
+          </ul>
+        </section>
 
-							</div>
-							<div class="col-12">
+<!--        &lt;!&ndash; INVITED TALKS &ndash;&gt;-->
+<!--        <section id="invited-talks" class="box page-content">-->
+<!--          <h2 class="major"><span>Invited Talks</span></h2>-->
+<!--          <div class="empty-space" aria-label="Empty invited talks section"></div>-->
+<!--        </section>-->
 
-								<!-- Contact -->
-									<section>
-										<h2 class="major"><span>Get in touch</span></h2>
-										<ul class="contact">
-											<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-											<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-											<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-											<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-											<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-										</ul>
-									</section>
+        <p class="last-update">Last Update: June 2026</p>
+      </div>
+    </main>
 
-							</div>
-						</div>
+    <footer id="footer">
+      <div class="container footer-content">
+        <p>© 2026 Jebin Kim</p>
+        <p>Design inspired by academic personal homepages and HTML5 UP TXT-style layout.</p>
+      </div>
+    </footer>
+  </div>
 
-						<!-- Copyright -->
-							<div id="copyright">
-								<ul class="menu">
-									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-								</ul>
-							</div>
+  <script>
+    // In-page navigation without leaving #section in the URL.
+    // Refresh keeps the browser's previous scroll position.
+    (function () {
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'auto';
+      }
 
-					</div>
-				</footer>
+      function removeHash() {
+        if (window.location.hash) {
+          history.replaceState(null, document.title, window.location.pathname + window.location.search);
+        }
+      }
 
-		</div>
+      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          var targetId = link.getAttribute('href');
+          if (!targetId || targetId === '#') return;
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          var target = document.querySelector(targetId);
+          if (!target) return;
 
-	</body>
+          event.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          removeHash();
+        });
+      });
+    })();
+  </script>
+</body>
 </html>
